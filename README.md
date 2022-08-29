@@ -62,7 +62,7 @@ Lista de funcionalidades:
 
 ## 🎨 Protótipo Figma
 
-![Conjunto-Mobile](https://www.figma.com/file/pXaPUo4BTiC0vUuA96zex3/ToDo-List-(Copy)?node-id=0%3A1)
+[Protótipo Figma](https://www.figma.com/file/pXaPUo4BTiC0vUuA96zex3/ToDo-List-(Copy)?node-id=0%3A1)
 
 <!--Running session-->
 
