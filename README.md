@@ -106,4 +106,4 @@ Este projeto está sob a licença [MIT](./LICENSE).
 ---
 
 <!--Bottom session-->
-<h4 align=center>Desenvolvido por Anderson Nascimento <a href="https://www.linkedin.com/in/andersonnascimentoafsn/"> <strong>Entre em contacto</strong> :)</a></a></h4>
+<h4 align=center>Desenvolvido por Anderson Nascimento com muito 💚 <a href="https://www.linkedin.com/in/andersonnascimentoafsn/"> <strong>Entre em contacto</strong> :)</a></a></h4>
