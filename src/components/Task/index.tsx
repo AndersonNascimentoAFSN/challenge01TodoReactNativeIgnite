@@ -30,13 +30,7 @@ export function Task({task, onCompleteTask, ...rest}: ITask) {
         {task.name}
       </Text>
       <TouchableOpacity style={styles.taskButton} {...rest}>
-        <Icon
-          name="trash"
-          size={20}
-          color="#808080"
-          style={styles.taskIcon}
-          // onPress={() => handleRemoveTask(item.id)}
-        />
+        <Icon name="trash" size={20} color="#808080" style={styles.taskIcon} />
       </TouchableOpacity>
     </View>
   );

@@ -1,13 +1,5 @@
 import React, {useState} from 'react';
-import {
-  FlatList,
-  SafeAreaView,
-  // Text,
-  // TouchableOpacity,
-  View,
-} from 'react-native';
-// import BouncyCheckbox from 'react-native-bouncy-checkbox';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import {FlatList, SafeAreaView, View} from 'react-native';
 import {AddButton} from '../../components/AddButton';
 import {Empty} from '../../components/Empty';
 import {Header} from '../../components/Header';
