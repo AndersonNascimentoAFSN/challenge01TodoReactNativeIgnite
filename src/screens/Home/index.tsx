@@ -15,7 +15,7 @@ type task = {
 };
 
 export function Home() {
-  const [taskName, setTaskName] = useState<string>('');
+  const [taskText, setTaskText] = useState<string>('');
   const [tasks, setTasks] = useState<task[]>([]);
 
   function genTaskId(lastId: number) {
@@ -23,14 +23,38 @@ export function Home() {
   }
 
   function handleAddTask() {
-    if (taskName) {
-      const newTask = {
-        id: genTaskId(tasks[tasks.length - 1]?.id),
-        name: taskName,
-      };
+    const taskExists = tasks.find(task => task.name === taskText);
 
+    const newTask = {
+      id: genTaskId(tasks[tasks.length - 1]?.id),
+      name: taskText,
+    };
+
+    if (taskExists) {
+      Alert.alert(
+        'Task Already Exists',
+        'This task already exists want to add it?',
+        [
+          {text: 'cancel', style: 'cancel', onPress: () => setTaskText('')},
+          {
+            text: 'Add',
+            onPress: () => {
+              setTasks(prev => [...prev, newTask]);
+              Alert.alert(
+                'Task added!',
+                'Your task has been added to the list',
+              );
+              setTaskText('');
+            },
+          },
+        ],
+      );
+      return;
+    }
+
+    if (taskText) {
       setTasks(prev => [...prev, newTask]);
-      setTaskName('');
+      setTaskText('');
     }
   }
 
@@ -72,8 +96,8 @@ export function Home() {
         <Input
           placeholder="Adicione uma nova tarefa"
           placeholderTextColor="#555"
-          onChangeText={setTaskName}
-          value={taskName}
+          onChangeText={setTaskText}
+          value={taskText}
         />
         <AddButton onPress={handleAddTask} />
       </View>
