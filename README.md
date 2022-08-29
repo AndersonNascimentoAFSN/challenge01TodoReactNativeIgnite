@@ -54,7 +54,7 @@ Lista de funcionalidades:
 ## Preview
 
 <h1 align="center">
-   
+   <img src="https://github.com/AndersonNascimentoAFSN/challenge01TodoReactNativeIgnite/blob/main/src/assets/todo-react-native.gif" alt="App todo gif" />
 </h1>
 
 <!--Layout session-->
