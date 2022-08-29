@@ -34,8 +34,7 @@
 
 O projeto foi desenvolvido como um desafio do curso de React-Native **Ignite** da [Rocketseat](https://app.rocketseat.com.br/ignite). O objetivo era desenvolver um aplicativo de tarefas para praticar os conceitos do React Native.
 
-**[Descrição do Desafio](https://efficient-sloth-d85.notion.site/Desafio-01-Praticando-os-conceitos-do-React-Native-f8f164e29df74cd987e1f9aebf142ffb)
-**[Figma](https://www.figma.com/file/pXaPUo4BTiC0vUuA96zex3/ToDo-List-(Copy)?node-id=0%3A1)**.
+**[Descrição do Desafio](https://efficient-sloth-d85.notion.site/Desafio-01-Praticando-os-conceitos-do-React-Native-f8f164e29df74cd987e1f9aebf142ffb)**
 
 <!--Funcionalidades do projeto-->
 
@@ -60,9 +59,9 @@ Lista de funcionalidades:
 
 <!--Layout session-->
 
-## 🎨 Protótipo Figma
+## 🎨 Protótipo
 
-[Protótipo Figma](https://www.figma.com/file/pXaPUo4BTiC0vUuA96zex3/ToDo-List-(Copy)?node-id=0%3A1)
+[Link Figma](https://www.figma.com/file/pXaPUo4BTiC0vUuA96zex3/ToDo-List-(Copy)?node-id=0%3A1)
 
 <!--Running session-->
 
