@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FlatList, SafeAreaView, View} from 'react-native';
+import {Alert, FlatList, SafeAreaView, View} from 'react-native';
 import {AddButton} from '../../components/AddButton';
 import {Empty} from '../../components/Empty';
 import {Header} from '../../components/Header';
@@ -33,7 +33,19 @@ export function Home() {
   }
 
   function handleRemoveTask(taskId: number) {
-    setTasks(prevState => prevState.filter(item => item.id !== taskId));
+    Alert.alert('Delete Task', 'Do you really want to delete the task?', [
+      {text: 'cancel', style: 'cancel'},
+      {
+        text: 'Delete',
+        onPress: () => {
+          setTasks(prevState => prevState.filter(item => item.id !== taskId));
+          Alert.alert(
+            'Task deleted!',
+            'The task has been deleted and will no longer appear in your list',
+          );
+        },
+      },
+    ]);
   }
 
   function handleCompleteTask(idTask: number) {
