@@ -23,13 +23,15 @@ export function Home() {
   }
 
   function handleAddTask() {
-    const newTask = {
-      id: genTaskId(tasks[tasks.length - 1]?.id),
-      name: taskName,
-    };
+    if (taskName) {
+      const newTask = {
+        id: genTaskId(tasks[tasks.length - 1]?.id),
+        name: taskName,
+      };
 
-    setTasks(prev => [...prev, newTask]);
-    setTaskName('');
+      setTasks(prev => [...prev, newTask]);
+      setTaskName('');
+    }
   }
 
   function handleRemoveTask(taskId: number) {
